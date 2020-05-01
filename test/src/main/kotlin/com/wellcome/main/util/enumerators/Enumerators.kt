@@ -1,0 +1,92 @@
+package com.wellcome.main.util.enumerators
+
+enum class TokenConstants {
+    TOKEN_REVOKED,
+    TOKEN_INVALID
+}
+
+enum class Languages(val lang: String) {
+    ENGLISH("en"),
+    RUSSIAN("ru");
+
+    fun translate() {
+
+    }
+}
+
+enum class SearchInstitutionDays {
+    NOW,
+    TODAY,
+    TOMORROW,
+    BIRTHDAY;
+}
+
+enum class SwitchState {
+    ENABLE, DISABLE
+}
+
+enum class Permissions(val value: String) {
+    CREATE_INSTITUTION(PermissionValues.CREATE_INSTITUTION),
+    GET_LOCALITY(PermissionValues.GET_LOCALITY),
+    CHANGE_PASSWORD(PermissionValues.CHANGE_PASSWORD),
+    GENERATE_MODERATION_URL(PermissionValues.GENERATE_MODERATION_URL),
+    GET_CUSTOMIZE_DATA(PermissionValues.GET_CUSTOMIZE_DATA),
+    GET_ONE_INSTITUTION(PermissionValues.GET_ONE_INSTITUTION),
+    UPDATE_INSTITUTION(PermissionValues.UPDATE_INSTITUTION),
+    SAVE_INSTITUTION(PermissionValues.SAVE_INSTITUTION),
+    BLOCK_INSTITUTION(PermissionValues.BLOCK_INSTITUTION),
+    GET_INSTAGRAM_ACCOUNTS(PermissionValues.GET_INSTAGRAM_ACCOUNTS),
+    GET_INSTITUTION_BY_ID(PermissionValues.GET_INSTITUTION_BY_ID),
+    GET_INSTITUTION_NAMES(PermissionValues.GET_INSTITUTION_NAMES),
+    GET_INSTITUTION_ATTRIBUTES(PermissionValues.GET_INSTITUTION_ATTRIBUTES),
+    GET_CATEGORY_NAMES(PermissionValues.GET_CATEGORY_NAMES),
+    SELECT_OFFER(PermissionValues.SELECT_OFFER),
+    ADD_STORY(PermissionValues.ADD_STORY),
+    GET_ALL_STORY(PermissionValues.GET_ALL_STORY),
+    GET_ALL_SELECTION_OFFERS(PermissionValues.GET_ALL_SELECTION_OFFERS),
+    REMOVE_SELECTION_OFFER(PermissionValues.REMOVE_SELECTION_OFFER),
+    GET_ALL_SELECTION(PermissionValues.GET_ALL_SELECTIONS),
+    ADD_SELECTION(PermissionValues.ADD_SELECTION),
+    CLEAR_ALL_CACHES(PermissionValues.CLEAR_ALL_CACHES),
+    RESTART_APPLICATION(PermissionValues.RESTART_APPLICATION),
+    SWITCH_CACHE(PermissionValues.SWITCH_CACHE),
+    REMOVE_SELECTION(PermissionValues.REMOVE_SELECTION),
+    GET_ALL_USER_STORY(PermissionValues.GET_ALL_USER_STORY),
+    APPROVE_USER_STORY(PermissionValues.APPROVE_USER_STORY),
+    REMOVE_USER_STORY(PermissionValues.REMOVE_USER_STORY);
+
+    object PermissionValues {
+        const val CREATE_INSTITUTION = "ROLE_CREATE_INSTITUTION"
+        const val GET_LOCALITY = "ROLE_GET_LOCALITY"
+        const val CHANGE_PASSWORD = "ROLE_CHANGE_PASSWORD"
+        const val GENERATE_MODERATION_URL = "ROLE_GENERATE_MODERATION_URL"
+        const val GET_CUSTOMIZE_DATA = "ROLE_GET_CUSTOMIZE_DATA"
+        const val GET_ONE_INSTITUTION = "ROLE_GET_ONE_INSTITUTION"
+        const val UPDATE_INSTITUTION = "ROLE_UPDATE_INSTITUTION"
+        const val SAVE_INSTITUTION = "ROLE_SAVE_INSTITUTION"
+        const val BLOCK_INSTITUTION = "ROLE_BLOCK_INSTITUTION"
+        const val GET_INSTAGRAM_ACCOUNTS = "ROLE_GET_INSTAGRAM_ACCOUNT"
+        const val GET_INSTITUTION_BY_ID = "ROLE_GET_INSTITUTION_BY_ID"
+        const val GET_INSTITUTION_NAMES = "ROLE_GET_INSTITUTION_NAMES"
+        const val GET_INSTITUTION_ATTRIBUTES = "ROLE_GET_INSTITUTION_ATTRIBUTES"
+        const val GET_CATEGORY_NAMES = "ROLE_GET_CATEGORY_NAMES"
+        const val SELECT_OFFER = "ROLE_SELECT_OFFER"
+        const val ADD_STORY = "ROLE_ADD_STORY"
+        const val GET_ALL_STORY = "ROLE_GET_ALL_STORY"
+        const val GET_ALL_SELECTION_OFFERS = "ROLE_GET_ALL_SELECTION_OFFERS"
+        const val REMOVE_SELECTION_OFFER = "ROLE_REMOVE_SELECTION_OFFER"
+        const val GET_ALL_SELECTIONS = "ROLE_GET_ALL_SELECTIONS"
+        const val ADD_SELECTION = "ROLE_ADD_SELECTION"
+        const val CLEAR_ALL_CACHES = "ROLE_CLEAR_ALL_CACHES"
+        const val RESTART_APPLICATION = "ROLE_RESTART_APPLICATION"
+        const val SWITCH_CACHE = "ROLE_SWITCH_CACHE"
+        const val REMOVE_SELECTION = "ROLE_REMOVE_SELECTION"
+        const val GET_ALL_USER_STORY = "ROLE_GET_ALL_USER_STORY"
+        const val APPROVE_USER_STORY = "ROLE_APPROVE_USER_STORY"
+        const val REMOVE_USER_STORY = "ROLE_REMOVE_USER_STORY"
+    }
+}
+
+enum class ModerationPermissions(val value: String) {
+
+}

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/wellcomedevdb
+    username: root
+    password: root
+  jpa:
+    database: postgresql
